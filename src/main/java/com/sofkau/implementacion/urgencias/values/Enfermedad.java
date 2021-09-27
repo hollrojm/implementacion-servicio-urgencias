@@ -1,4 +1,10 @@
 package com.sofkau.implementacion.urgencias.values;
 
-public final class Enfermedad {
+import co.com.sofka.domain.generic.ValueObject;
+
+public final class Enfermedad implements ValueObject<String> {
+    @Override
+    public String value() {
+        return null;
+    }
 }

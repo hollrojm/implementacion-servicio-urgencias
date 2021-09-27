@@ -1,4 +1,10 @@
 package com.sofkau.implementacion.personalMedico.values;
 
-public final class InformacionProfesional {
+import co.com.sofka.domain.generic.ValueObject;
+
+public final class InformacionProfesional implements ValueObject<String> {
+    @Override
+    public String value() {
+        return null;
+    }
 }

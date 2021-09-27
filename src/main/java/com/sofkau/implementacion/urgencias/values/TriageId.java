@@ -1,4 +1,6 @@
 package com.sofkau.implementacion.urgencias.values;
 
-public final class TriageId {
+import co.com.sofka.domain.generic.Identity;
+
+public final class TriageId extends Identity {
 }

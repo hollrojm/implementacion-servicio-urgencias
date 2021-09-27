@@ -1,4 +1,6 @@
 package com.sofkau.implementacion.personalMedico.values;
 
-public final class ProfesionalId {
+import co.com.sofka.domain.generic.Identity;
+
+public final class ProfesionalId extends Identity {
 }
