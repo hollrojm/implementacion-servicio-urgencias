@@ -2,7 +2,7 @@ package com.sofkau.implementacion.urgencias.values;
 
 import co.com.sofka.domain.generic.ValueObject;
 
-public final class CategoriaTriage implements ValueObject<String> {
+public class CausaUrgencia implements ValueObject<String> {
     @Override
     public String value() {
         return null;
