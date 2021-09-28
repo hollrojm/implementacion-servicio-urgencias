@@ -7,7 +7,7 @@ import com.sofkau.implementacion.urgencias.values.CausaUrgencia;
 public final class PersonalMedicoAgregado extends DomainEvent {
     private final ProfesionalId profesionalId;
     public PersonalMedicoAgregado(ProfesionalId profesionalId) {
-        super("Hospital.urgencias.personalMedicoAgregado");
+        super("hospital.urgencias.personalMedicoAgregado");
         this.profesionalId = profesionalId;
     }
 
