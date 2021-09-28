@@ -58,20 +58,11 @@ public class Urgencias extends AggregateEvent<UrgenciasId>{
 
     }
 
-    public Optional<Triage> getCausaUrgenciaporId(TriageId entityId){
-        return triages()
-                .stream()
-                .filter(triage -> triage.identity().equals(entityId))
-                .findFirst();
-    }
 
     public ProfesionalId ProfesionalId() {
         return profesionalId;
     }
 
-    public Set<Triage> triages() {
-        return triages;
-    }
 
     public ServicioHospitalizacionId ServicioHospitalizacionId() {
         return servicioHospitalizacionId;
