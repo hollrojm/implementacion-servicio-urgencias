@@ -23,23 +23,17 @@ public final class UrgenciasChange extends EventChange {
             urgencias.profesionalId = event.getProfesionalId();
         });
 
-        apply((TriageAgregado event)->{
-            var numTriage = urgencias.triages().size();
-            if(numTriage == 100){
-                throw new IllegalArgumentException("No puedes agregar mas Triages solo hasta 100.");
 
-            }
-        });
 
-        apply((UrgenciaAgregada event)->{
-            urgencias.CausaUrgencia = event.getCausaUrgencia();
-        });
-        apply((CategoriaTriageActualizada event)->{
-            var triage = urgencias.getCausaUrgenciaporId(event.getTriageId())
-                    .orElseThrow(() -> new IllegalArgumentException("No se encuentra la funcion del triage"));
-                     triage.actualizarTriage(event.
-                    getCategoriaTriage());
-        });
+        //apply((UrgenciaAgregada event)->{
+           // urgencias.CausaUrgencia = event.getCausaUrgencia();
+        //});
+        //apply((CategoriaTriageActualizada event)->{
+            //var triage = urgencias.getCausaUrgencia()(event.getTriageId())
+                    //./orElseThrow(() -> new IllegalArgumentException("No se encuentra la funcion del triage"));
+                     //triage.actualizarTriage(event.
+                    //getCategoriaTriage());
+        //});
 
     }
 }
